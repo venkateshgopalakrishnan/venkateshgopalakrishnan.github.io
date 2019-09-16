@@ -29,7 +29,7 @@ const TopMenu = () => {
             activeStyle={{
               fontWeight: "bold"
             }}
-            style={{ color: "white" }}
+            style={{ color: "white", marginLeft: "10%" }}
             to="/"
           >
             Home
@@ -40,7 +40,7 @@ const TopMenu = () => {
             activeStyle={{
               fontWeight: "bold"
             }}
-            style={{ color: "white" }}
+            style={{ color: "white", marginLeft: "10%" }}
             to="/resume"
           >
             Resume
@@ -51,7 +51,7 @@ const TopMenu = () => {
             activeStyle={{
               fontWeight: "bold"
             }}
-            style={{ color: "white" }}
+            style={{ color: "white", marginLeft: "10%" }}
             to="/projects"
           >
             Projects
