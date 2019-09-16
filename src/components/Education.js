@@ -1,0 +1,20 @@
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+
+const Education = props => (
+  <Container>
+    <Row>
+      <Col xs lg={4}>
+        <p>
+          {props.startYear} - {props.endYear}
+        </p>
+      </Col>
+      <Col xs lg={8}>
+        <h4 style={{ marginTop: "0px" }}>{props.schoolName}</h4>
+        <p>{props.schoolDescription}</p>
+      </Col>
+    </Row>
+  </Container>
+);
+
+export default Education;
