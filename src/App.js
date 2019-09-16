@@ -12,6 +12,7 @@ const App = () => {
   return (
     <Container className="text-center">
       <TopMenu />
+      <br></br>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/resume" component={ResumePage} />

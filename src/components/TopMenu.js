@@ -5,20 +5,23 @@ import { NavLink } from "react-router-dom";
 const TopMenu = () => {
   return (
     <Navbar expand="lg" variant="dark">
-      <Navbar.Brand href="/">
+      <Navbar.Brand href="/" style={{ textAlign: "left" }}>
         <img
           src="../gv_logo.png"
           style={{
             width: "15%",
-            borderBottomRightRadius: "40%",
-            borderTopLeftRadius: "40%",
+            borderBottomRightRadius: "60%",
+            borderTopLeftRadius: "60%",
             borderBottomLeftRadius: "20%",
             borderTopRightRadius: "20%"
           }}
           alt="Venkatesh Gopalakrishnan"
         />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle
+        aria-controls="basic-navbar-nav"
+        style={{ textAlign: "right" }}
+      />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto" style={{ textColor: "white" }}>
           <NavLink
@@ -31,7 +34,7 @@ const TopMenu = () => {
           >
             Home
           </NavLink>
-          &nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;
           <NavLink
             exact
             activeStyle={{
@@ -42,7 +45,7 @@ const TopMenu = () => {
           >
             Resume
           </NavLink>
-          &nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;
           <NavLink
             exact
             activeStyle={{
