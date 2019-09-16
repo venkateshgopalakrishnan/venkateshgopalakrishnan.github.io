@@ -10,18 +10,15 @@ import "./App.css";
 
 const App = () => {
   return (
-    // <Container className="text-center">
-    //   <TopMenu />
-    //   <Switch>
-    //     <Route exact path="/" component={HomePage} />
-    //     <Route path="/resume" component={ResumePage} />
-    //     <Route path="/projects" component={ProjectsPage} />
-    //     <Route component={NotFoundPage} />
-    //   </Switch>
-    // </Container>
-    <div>
-      <h2>App Component here</h2>
-    </div>
+    <Container className="text-center">
+      <TopMenu />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/resume" component={ResumePage} />
+        <Route path="/projects" component={ProjectsPage} />
+        <Route component={NotFoundPage} />
+      </Switch>
+    </Container>
   );
 };
 

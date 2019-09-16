@@ -1,5 +1,6 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 const TopMenu = () => {
   return (
@@ -8,9 +9,38 @@ const TopMenu = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto" style={{ textColor: "white" }}>
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/resume">Resume</Nav.Link>
-          <Nav.Link href="/projects">Projects</Nav.Link>
+          <NavLink
+            exact
+            activeStyle={{
+              fontWeight: "bold"
+            }}
+            style={{ color: "white" }}
+            to="/"
+          >
+            Home
+          </NavLink>
+          &nbsp;&nbsp;&nbsp;
+          <NavLink
+            exact
+            activeStyle={{
+              fontWeight: "bold"
+            }}
+            style={{ color: "white" }}
+            to="/resume"
+          >
+            Resume
+          </NavLink>
+          &nbsp;&nbsp;&nbsp;
+          <NavLink
+            exact
+            activeStyle={{
+              fontWeight: "bold"
+            }}
+            style={{ color: "white" }}
+            to="/projects"
+          >
+            Projects
+          </NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

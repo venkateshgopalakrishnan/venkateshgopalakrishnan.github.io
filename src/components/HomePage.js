@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
@@ -26,14 +25,20 @@ const HomePage = () => {
         <span>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           {/* <Button variant="secondary" size="lg"> */}
-          <Link to="https://www.linkedin.com/in/gopalakrishnanvenkatesh/">
+          <a
+            style={{ color: "white" }}
+            href="https://www.linkedin.com/in/gopalakrishnanvenkatesh/"
+          >
             <FontAwesomeIcon icon={faLinkedin} size="4x" />
-          </Link>
+          </a>
           {/* </Button> */} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           {/* <Button variant="secondary" size="lg"> */}
-          <Link to="https://github.com/venkateshgopalakrishnan">
+          <a
+            style={{ color: "white" }}
+            href="https://github.com/venkateshgopalakrishnan"
+          >
             <FontAwesomeIcon icon={faGithubSquare} size="4x" />
-          </Link>
+          </a>
           {/* </Button>&nbsp;&nbsp;&nbsp;&nbsp; */}{" "}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span>
