@@ -7,16 +7,19 @@ class Skills extends Component {
       <Container>
         <Row>
           <Col xs lg={2}>
-            <div style={{ display: "flex" }}>{this.props.skill}</div>
+            <div style={{ display: "flex" }}>
+              {this.props.icon}&nbsp;
+              {this.props.skill}
+            </div>
           </Col>
           <Col xs lg={10}>
             <ProgressBar
+              variant="danger"
               style={{
                 margin: "0.8em",
                 width: "100%",
-                height: "3.5px",
-                max: "100",
-                background: "#e22947"
+                height: "5px",
+                max: "100"
               }}
               animated
               now={this.props.progress}
